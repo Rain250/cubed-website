@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import clsx from "clsx";
 
 // Minimal, production-ready single-file landing page component with dark mode.
 // Uses CSS custom properties for automatic dark mode theming.
@@ -138,14 +137,14 @@ export default function CubedLanding() {
               <div className="text-xs font-mono text-muted-foreground mb-2">invoice.pdf → AI parse → Square</div>
               <div className="bg-primary text-primary-foreground rounded-xl p-3 text-xs sm:text-sm leading-relaxed">
                 <div className="font-mono text-xs sm:text-sm break-words">
-                  <div className="mb-2">vendor: "Advance Foods Intl"</div>
+                  <div className="mb-2">vendor: &quot;Advance Foods Intl&quot;</div>
                   <div className="mb-2">items: [</div>
-                  <div className="ml-2 mb-1">name: "Shan Chaat Masala"</div>
+                  <div className="ml-2 mb-1">name: &quot;Shan Chaat Masala&quot;</div>
                   <div className="ml-2 mb-1">qty: 12, unit_cost: 0.99</div>
-                  <div className="ml-2 mb-2">category: "Spices & Mixes"</div>
+                  <div className="ml-2 mb-2">category: &quot;Spices &amp; Mixes&quot;</div>
                   <div className="mb-2">]</div>
                   <div className="mt-3 text-xs">→ auto-match to Square items</div>
-                  <div className="text-xs">→ auto-generate SEO titles & images</div>
+                  <div className="text-xs">→ auto-generate SEO titles &amp; images</div>
                   <div className="text-xs">→ update inventory, COGS, and website</div>
                 </div>
               </div>
@@ -326,7 +325,7 @@ export default function CubedLanding() {
           transition={{ duration: 0.6 }}
         >
           <h3 className="text-xl sm:text-2xl font-bold text-card-foreground">Get early access</h3>
-          <p className="mt-2 text-sm sm:text-base text-muted-foreground">Drop your email. We'll reach out with a live store walkthrough and a private beta invite.</p>
+          <p className="mt-2 text-sm sm:text-base text-muted-foreground">Drop your email. We&apos;ll reach out with a live store walkthrough and a private beta invite.</p>
           <form onSubmit={handleSubmit} className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
             <input
               type="email"
